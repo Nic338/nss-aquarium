@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    font-size: 110px;
+    margin: 0;
+}
+body{
+    background-color: aquamarine;
+}
+.main1{
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid black;
+    justify-content: space-between;
+}
+.fishList{
+   justify-content: space-evenly;
+   display: flex;
+   background-color: brown;
+   padding: 5em;
+   margin: 1em;
+   flex-direction: column;
+   flex-wrap: wrap;
+   flex-basis: 85%;
+   font-size: 18px;
+   text-align: center;
+}
+img {
+    width: 180px;
+    height: auto;
+    padding: 1em;
+    margin: 1em;
+}
+aside{
+   flex-wrap: nowrap;
+   font-size: 20px;
+   margin: .7em;
+   flex-basis: 34%;
+}
+.travelTips{
+    font: 24px bold italic small-caps
+
+}
+.locationsVisited{
+    font-size: 24px;
+}
