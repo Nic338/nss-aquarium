@@ -5,69 +5,81 @@
  *  fish to the collection.
  */
 const database = {
-    fish: [
+    singleFish: [
         {
-            species: "Barticus vertebrata"
-            name: "Bart",
-            size: 3
-            harvested: "Bartstown"
-            food: "crustaceans",
-        }
+            fishImage:"https://cdn.drawception.com/images/panels/2016/3-12/TRZmGYrdAs-4.png",
+            fishSpecies: "Barticus vertebrata",
+            fishName: "Bart",
+            fishLength: 3,
+            fishHarvest: "Bartstown",
+            fishDiet: "crustaceans",
+        },
         {
-            species: "Derpetris vertebrata"
-            name:"The Pacific Derp Fish"
-            size: .4
-            harvested: "O'ahu"
-            food: "small fish"
-        }
+            fishImage:"https://cdn.drawception.com/images/panels/2016/3-12/TRZmGYrdAs-4.png",
+            fishSpecies: "Derpetris vertebrata",
+            fishName:"The Pacific Derp Fish",
+            fishLength: .4,
+            fishHarvest: "O'ahu",
+            fishDiet: "small fish"
+        },
         {
-            species: "Lachnolmaius maximus"
-            name:"Hogfish"
-            size: 1.4
-            harvested:"Eastern Coast of Mexico"
-            food:"molluscs, crabs, and sea urchins"
-        }
+            fishImage:"https://s.cornershopapp.com/product-images/3754535.jpg?versionId=nft13eXNFTpfW8iGYYZ4LYZTadRkbsY.",
+            fishSpecies: "Lachnolmaius maximus",
+            fishName:"Hogfish",
+            fishLength: 1.4,
+            fishHarvest:"Eastern Coast of Mexico",
+            fishDiet:"molluscs, crabs, and sea urchins"
+        },
         {
-            species: "Gadus morhua"
-            name: "Atlantic Cod"
-            size: 1.6
-            harvested: "Maine"
-            food: "crustaceans"
-        }
+            fishImage:"https://www.thefisherman.com/wp-content/uploads/2019/04/2019-2-profiling-the-atlantic-cod-cod.jpg",
+            fishSpecies: "Gadus morhua",
+            fishName: "Atlantic Cod",
+            fishLength: 1.6,
+            fishHarvest: "Maine",
+            fishDiet: "crustaceans"
+        },
         {
-            species: "Lophius piscatorius"
-            name: "Monkfish"
-            size: .45
-            harvested:"North Atlantic Ocean"
-            food:"Fish"
-        }
+            fishImage: "https://media.fisheries.noaa.gov/dam-migration/900x600-monkfish-noaa-istock.jpg",
+            fishSpecies: "Lophius piscatorius",
+            fishName: "Monkfish",
+            fishLength: .45,
+            fishHarvest:"North Atlantic Ocean",
+            fishDiet:"Fish"
+        },
         {
-            species: "Epinephelus morio"
-            name: "Red Grouper"
-            size: .78
-            harvested: "Florida Keys"
-            food: "Soft coral and sea sponges"
-        }
+            fishImage: "https://safmc.net/wp-content/uploads/2022/04/red-grouper.png",
+            fishSpecies: "Epinephelus morio",
+            fishName: "Red Grouper",
+            fishLength: .78,
+            fishHarvest: "Florida Keys",
+            fishDiet: "Soft coral and sea sponges"
+        },
         {
-            species: "Salvelinus foninalis"
-            name: "Brook Trout"
-            size: .24
-            harvested: "West Virginia"
-            food: "aquatic invertibrates"
-        }
+            fishImage:"https://upload.wikimedia.org/wikipedia/commons/e/ee/Brook_trout_in_water.jpg",
+            fishSpecies: "Salvelinus foninalis",
+            fishName: "Brook Trout",
+            fishLength: .24,
+            fishHarvest: "West Virginia",
+            fishDiet: "aquatic invertibrates"
+        },
         {
-            species: "Pomacanthus paru"
-            name: "French Angelfish"
-            size: .31
-            harvested: "Gulf of Mexico"
-            food: "Sponges, algae, broyzoans, zoantharians, gorgonians, hydroids, coral, and tunicates"
-        }
+            fishImage: "https://www.thoughtco.com/thmb/45viEdNPimLOuUzMWQVu1yyRECw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/french1-a3c986fbbdad48a9ad494c8942223335.jpg",
+            fishSpecies: "Pomacanthus paru",
+            fishName: "French Angelfish",
+            fishLength: .31,
+            fishHarvest: "Gulf of Mexico",
+            fishDiet: "Sponges, algae, broyzoans, zoantharians, gorgonians, hydroids, coral, and tunicates"
+        },
         {
-            species: "Amphiprion ocellaris"
-            name: "Clownfish"
-            size: .1
-            harvested: "Western Coast of Japan"
-            food: "Plankton and algae"
+            fishImage:"https://www.aquariumofpacific.org/images/made_new/images-uploads-clownfish_600_q85.jpg",
+            fishSpecies: "Amphiprion ocellaris",
+            fishName: "Clownfish",
+            fishLength: .1,
+            fishHarvest: "Western Coast of Japan",
+            fishDiet: "Plankton and algae"
         }
     ]
 }
+    export const getFish = () => {
+        return database.singleFish.map(copyOfSingleFishObject => ({...copyOfSingleFishObject}))
+    }
