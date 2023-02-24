@@ -12,11 +12,13 @@ body{
     flex-wrap: nowrap;
     border: 1px dotted black;
     justify-content: space-between;
+    background: url(https://img.freepik.com/free-vector/silhouette-underwater-scene-with-coral-reef-background_1308-29143.jpg?t=st=1676393810~exp=1676394410~hmac=dcf65f158732aa2adae58261b5a03cee3cb56eab2cc7a366a9ef7f8cd3e93912);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .fishList{
    justify-content: space-evenly;
    display: flex;
-   background-color: brown;
    margin: 1em;
    flex-direction: row;
    flex-wrap: wrap;
@@ -24,9 +26,6 @@ body{
    font-size: 18px;
    text-align: center;
    word-wrap: normal;
-   background: url(https://img.freepik.com/free-vector/silhouette-underwater-scene-with-coral-reef-background_1308-29143.jpg?t=st=1676393810~exp=1676394410~hmac=dcf65f158732aa2adae58261b5a03cee3cb56eab2cc7a366a9ef7f8cd3e93912);
-   background-size: cover;
-   background-repeat: no-repeat;
    color: white;
    font-family: Arial, Helvetica, sans-serif;
 }
